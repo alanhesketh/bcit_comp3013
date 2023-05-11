@@ -1,0 +1,1 @@
+interface AssignmentInterface { id: number, name: string, status: number };
