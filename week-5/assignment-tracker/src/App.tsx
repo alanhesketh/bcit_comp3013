@@ -3,10 +3,9 @@ import { Header } from "./components/Header";
 import { Assignments } from "./components/Assignments";
 
 function App() {
-
     let initialAssignments = [];
-    let storedData = localStorage.getItem('currentAssignments');
-    storedData != null ? initialAssignments = JSON.parse(storedData) : initialAssignments = [];
+    const storedData = localStorage.getItem('currentAssignments');
+    storedData === null ? initialAssignments = [] : initialAssignments = JSON.parse(storedData);
 
     const [currentAssignments, setCurrentAssignments] = React.useState(initialAssignments);
 

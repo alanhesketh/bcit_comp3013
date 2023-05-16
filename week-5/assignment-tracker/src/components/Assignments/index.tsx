@@ -1,9 +1,10 @@
 import { Assignment } from "../Assignment";
 import styles from "./assignments.module.css";
+import AssignmentInterface, {AssignmentsAndCallbackProps} from "../interfaces.tsx";
 
-export function Assignments(props) {
+export function Assignments(props: AssignmentsAndCallbackProps) {
 //TODO: FIX THIS SHIT
-    const doneCountTotal = props.currentAssignments.reduce(function(sum: number, assignment) {return sum + (assignment.status + 0);},0);
+    const doneCountTotal = props.currentAssignments.reduce(function(sum: number, assignment: AssignmentInterface) {return sum + (assignment.status + 0);},0);
 
     return (
     <section className={styles.assignments}>
