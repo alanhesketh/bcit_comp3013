@@ -38,7 +38,7 @@ export function Assignment(props: AssignmentProps) {
           <div>{props.itemstatus===1 ? <BsFillCheckCircleFill size={20} /> : null }</div>
       </button>
 
-      <p className={classNamesListText.join(" ")} >{props.itemname} {props.itemid}</p>
+      <p className={classNamesListText.join(" ")} >{props.itemname}</p>
 
       <button className={styles.deleteButton} onClick={()=>{
           const updatedAssignments = props.currentAssignments.filter((a: AssignmentInterface) => a.id !== props.itemid);
