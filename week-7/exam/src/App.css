@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #333333;
+}
+
+span > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+
+h1 {
+  font-size: large;
+}
+
+li {
+  font-size: smaller;
+}
