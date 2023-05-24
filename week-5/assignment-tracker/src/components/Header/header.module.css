@@ -20,7 +20,7 @@
 
 .newAssignmentForm input {
   height: 100%;
-  flex: 1;
+  flex: 3;
   color: #fff;
   background: #262626;
   border: 1px solid #0d0d0d;
@@ -33,7 +33,7 @@
   color: #808080;
 }
 
-.newAssignmentForm button {
+.newAssignmentForm > button {
   height: 100%;
   padding: 0 16px;
   background: #8284fa;
@@ -51,3 +51,4 @@
   background: grey;
   cursor: default;
 }
+

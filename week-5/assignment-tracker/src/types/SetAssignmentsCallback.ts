@@ -1,0 +1,1 @@
+export type setAssignmentsCallback = (assignments: string []) => void;
