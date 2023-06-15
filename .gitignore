@@ -9,13 +9,13 @@ week-2/*
 week-1/*
 testapp/*
 testapp2/*
-week-5/.DS_Store
 week-2/vite-project/src/Profile.tsx
 week-1/index.js
 week-1/index.html
 week-1/css.css
 week-1/countervanilla.html
 week-1/counterreact.html
-week-1/counterreact.html
-week-1/countervanilla.html
-week-1/css.css
+/week-8/reactpostappstarter/backend/node_modules/
+/week-8/reactpostappstarter/frontend/node_modules/
+/week-7/exam/node_modules/
+*/node_modules
