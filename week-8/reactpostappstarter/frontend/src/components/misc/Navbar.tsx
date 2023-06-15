@@ -37,18 +37,17 @@ const useStyles = createStyles((theme) => ({
         fontSize: theme.fontSizes.sm,
         fontWeight: 500,
         /* This is the background color of the default button - dark/light mode */
-        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.blue[1] : theme.colors.gray[0],
+        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.blue[1] : theme.colors.gray[2],
        '&:hover': {
             /* This is the background color of the button and font color when it is hovered - dark/light mode */
-            backgroundColor: theme.colorScheme === 'dark' ? theme.colors.blue[6] : theme.colors.blue[8],
+            backgroundColor: theme.colorScheme === 'dark' ? theme.colors.blue[6] : theme.colors.blue[7],
             color: theme.colorScheme === 'dark' ? theme.colors.gray[0] : theme.colors.gray[0],
         },
     },
 
     linkActive: {
         '&': {
-            backgroundColor: theme.colorScheme === 'dark' ? theme.colors.blue[6] : theme.colors.blue[8],
-            color: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[8],
+            backgroundColor: theme.colorScheme === 'dark' ? theme.colors.blue[4] : theme.colors.blue[3],
         },
     },
 }));
@@ -70,6 +69,7 @@ export function Navbar(props) {
     //THIS IS FROM THE OLD SCRIPT
     const { logoutService, user } = useBoundStore((state) => state);
     const onLogout = () => {
+        setActivePage('/');
         logoutService();
     };
     const toLogin = () => {setActivePage('login');
@@ -104,7 +104,7 @@ export function Navbar(props) {
                         onLabel={<IconSun size="2em" stroke={2.5} color={theme.colors.yellow[4]} />}
                         offLabel={<IconMoonStars size="2em" stroke={2.5} color={theme.colors.blue[6]} />}
                     />
-                <Text size={28}></Text>
+                <Text size={28}>Post Sample Application</Text>
                 <Group spacing={5} className={classes.links}>
 
 
