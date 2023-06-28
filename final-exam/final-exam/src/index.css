@@ -1,0 +1,57 @@
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type=text] {
+  width: 90%;
+  margin: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: larger;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+
+.highlighted {
+  background-color: #EEF43B;
+}
+
+.card {
+  padding: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border: 5px white solid;
+  background-color: ivory;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin: 20px;
+  align-items: start;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: larger;
+  font-weight: 700;
+  margin: 0px;
+  line-height: 24px;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: normal;
+  font-weight: 400;
+  margin: 0px;
+}
+
+
