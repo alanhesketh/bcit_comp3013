@@ -11,6 +11,9 @@ body {
 .main{
   max-width: 1600px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -54,12 +57,12 @@ li {
 
 .highlight {
   animation: animatehighlight 0.5s linear;
-  background-color: yellow;
+  background-color: lemonchiffon;
 }
 
 @keyframes animatehighlight {
   from {background-color: white;}
-  to {background-color: yellow;}
+  to {background-color: lemonchiffon;}
 }
 
 .flexbuttons {
@@ -76,6 +79,7 @@ li {
 .btn {
   padding: 0.8rem;
   margin: 5px;
+  font-family: Oswald, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   border-radius: 4px;

@@ -17,8 +17,11 @@ function App() {
 
   return (
     <div className='main'>
+        <h1>Imageboard</h1>
+        <div>
         <input type="number" name="cards" min="1" max="20" value={numberOfCards} onChange={(e)=>setNumberOfCards(e.target.value)} />
         <button onClick={()=>setCardSequence(seedCards(numberOfCards))} >Set Cards</button>
+        </div>
       <ul className='cards'>
           {cardSequence.map ((card)=> (<Card key={card.id} card={card} selectedCard={selectedCard} setSelectedCard={setSelectedCard} cardSequence={cardSequence} setCardSequence={setCardSequence}/>))}
       </ul>
